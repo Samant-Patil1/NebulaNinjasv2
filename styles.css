@@ -91,9 +91,15 @@ nav ul li a:hover {
 .section p{
     font-size: 1.5rem;
 }
+.section ol, ul{
+    margin-top: 0.5cm;
+    margin-bottom: 0.5cm;
+}
 
-.section ul li{
+
+.section ul li, ol li{
     margin-left: 2cm;
+    font-size: 1.25rem;
 }
 
 /* Footer */
