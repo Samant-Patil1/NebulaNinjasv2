@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seismic Data Upload</title>
+    <style>
+        body {
+            background-image: url("/static/image.png"); /* Your background image path */
+            background-size: cover;
+            text-align: center;
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            padding-top: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Seismic Data Analysis</h1>
+        <form action="/upload" method="post" enctype="multipart/form-data">
+            <p>Upload Seismic CSV File:</p>
+            <input type="file" name="file">
+            <br><br>
+            <input type="submit" value="Upload and Process">
+        </form>
+    </div>
+</body>
+</html>
