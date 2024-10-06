@@ -77,7 +77,10 @@ nav ul li a:hover {
     padding: 3rem;
     text-align: left;
     background-color: rgba(0, 0, 0, 0.8);
-    margin: 20px;
+    margin-left: 175px;
+    margin-right: 175px;
+    amrgin-top: 20px;
+    margin-bottom: 20px
     border-radius: 10px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.);
 }
