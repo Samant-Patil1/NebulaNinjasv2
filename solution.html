@@ -22,80 +22,35 @@
                 </ul>
             </nav>
         </header>
-<section class="section"><h2>Our Solution: Automated Seismic Signal Analysis with SINN</h2></section>
+<section class="section"><h2>Our Solution: Automated Seismic Signal Processing from Space</h2></section>
 
-<section class="section" id="home">
-    <p>This page describes SINN, our innovative approach to analyzing seismic data.  SINN is a Python class designed to automate the detection of seismic events in a signal. It leverages signal processing techniques to identify potential events and present the results for further investigation.    </p>
-    <ul>
-        <li><b>Earthquake monitoring and prediction:</b> Seismic data can be used to track seismic activity and identify potential earthquake hazards.</li>
-        <li><b>Oil and gas exploration:</b> Seismic data can be used to locate underground oil and gas reservoirs.</li>
-        <li><b>Volcano monitoring:</b> Seismic data can be used to track volcanic activity and predict eruptions.</li>
-        <li><b>Engineering applications:</b> Seismic data can be used to design structures that can withstand earthquakes.</li>
-    </ul>
-</section>
 
-<section class="section">
-    <p>Key Concepts in Seismic Signal Processing:</p>
-    <ul>
-        <li><b>Seismic wave types:</b> There are three main types of seismic waves: P-waves, S-waves, and surface waves. Each type of wave has different characteristics that can be used to identify the source of the earthquake and estimate its magnitude.</li>
-        <li><b>Seismic data acquisition:</b> Seismic data is typically collected using arrays of seismometers. The spacing of the seismometers can affect the resolution and accuracy of the data.</li>
-        <li><b>Seismic data processing:</b> Seismic data must be processed to remove noise and extract the signal of interest. Common processing techniques include filtering, deconvolution, and migration.</li>
-        <li><b>Seismic data interpretation:</b> Once the data has been processed, it can be interpreted to identify the source of the seismic event and estimate its characteristics.</li>
-    </ul>
-</section>
-
-<section class="section">
-    <p>Applications of Seismic Signal Processing:</p>
-    <ul>
-        <li><b>Earthquake location and magnitude determination:</b> Seismic data can be used to locate the epicenter of an earthquake and estimate its magnitude.</li>
-        <li><b>Oil and gas exploration:</b> Seismic data can be used to create images of the subsurface that can help identify potential oil and gas reservoirs.</li>
-        <li><b>Volcano monitoring:</b> Seismic data can be used to track volcanic activity and predict eruptions.</li>
-        <li><b>Engineering applications:</b> Seismic data can be used to design structures that can withstand earthquakes.</li>
-    </ul>
-</section>
-
-<section class="section">
-    <p>Challenges in Seismic Signal Processing:</p>
-    <ul>
-        <li><b>Noise:</b> Seismic data is often contaminated by noise from a variety of sources, including human activity, wind, and other natural phenomena.</li>
-        <li><b>Data volume:</b> Seismic data can be very large, making it difficult to process and analyze.</li>
-        <li><b>Complexity:</b> Seismic signal processing can be a complex task, requiring specialized knowledge and skills.</li>
-    </ul>
-</section>
-
-<section class="section">
-    <p>Future Trends in Seismic Signal Processing:</p>
-    <ul>
-        <li><b>Advancements in data acquisition:</b> New technologies are being developed to improve the quality and resolution of seismic data.</li>
-        <li><b>Machine learning and artificial intelligence:</b> Machine learning and artificial intelligence techniques are being used to automate seismic data processing and interpretation.</li>
-        <li><b>Multidisciplinary applications:</b> Seismic signal processing is being applied to a wider range of fields, such as environmental science and climate change research.</li>
-    </ul>
-</section>
 
 </body>
 </html>
 
-Relative Time: An array containing the time points relative to the start of the recording for each data point.
-Data: An array containing the velocity measurements at each corresponding time point.
-Here's a breakdown of SINN's functionalities:
+At [Your Company Name], we are revolutionizing the field of lunar and planetary seismology with our innovative seismic signal processing solution. Our web-based platform, built on powerful Python libraries like Pandas, NumPy, SciPy, and Matplotlib, empowers researchers and space agencies to efficiently analyze seismic data collected from space missions.
 
-Data Preprocessing: SINN first preprocesses the data to remove noise and enhance the signal of interest. This involves:
+Unveiling Hidden Seismic Activity
+Our core technology lies in the SINN class (Seismic Intelligent Noise Neutralizer). This class takes two key inputs:
 
-Absolute Value Transformation: Converting the data to absolute values to focus on the magnitude of the velocity changes.
-Mean Removal: Subtracting a calculated mean value from the absolute data to center the signal around zero.
-Event Detection: SINN employs a threshold-based approach to detect potential seismic events:
+Relative Time: An array containing the time points relative to a reference point in the seismic data.
+Velocity Data: An array containing the seismic velocity measurements at corresponding time points.
+SINN performs the following key steps:
 
-Adaptive Threshold: It calculates a dynamic threshold based on the average absolute value of the data.
-Sliding Window Analysis: The code iterates through the absolute data using a sliding window.
-Event Detection Logic: If the absolute value of a data point exceeds the threshold and a certain percentage of subsequent data points within a specific window also exceed the threshold, an event is identified.
-Visualization: SINN generates a visualization with two key components:
+Noise Reduction: It employs a novel approach to reduce background noise by calculating a dynamic mean based on the absolute value of the data. This technique effectively removes low-level noise, enhancing the detection of seismic events.
 
-Time Series Plot: This plot shows the original velocity data alongside the calculated threshold and vertical lines marking identified events (red) and potential noise segments (green).
-Spectrogram: A spectrogram depicts the frequency content of the data over time, providing insights into the dominant frequencies associated with the events.
-Benefits of SINN
-SINN offers several advantages for automated seismic signal analysis:
+Event Detection: SINN utilizes a sliding window approach to identify potential seismic events. It analyzes the absolute value of the data within the window and compares it to the dynamic mean. If the absolute value consistently exceeds a threshold for a specific duration, the system flags it as a potential seismic event.
 
-Efficiency: It automates the process of identifying potential seismic events, saving time and resources compared to manual analysis.
-Standardization: It provides a consistent and objective approach to event detection, minimizing human bias.
-Customization: The threshold and window size parameters can be adjusted based on the specific characteristics of the seismic data being analyzed.
-Please note:  SINN is currently under development and further refinement is ongoing. We are actively exploring ways to improve its accuracy and efficiency.
+Visualization: SINN generates informative plots to help researchers visualize and interpret the results. The plots include:
+
+Time Series Plot: This plot displays the original velocity data along with the dynamic mean, highlighting the identified seismic events.
+Spectrogram: This visualization depicts the frequency distribution of the seismic energy over time, offering valuable insights into the nature of the seismic activity.
+Benefits of Our Solution
+Our seismic signal processing solution offers several advantages:
+
+Automated Processing: SINN automates the analysis of seismic data, saving researchers valuable time and effort compared to manual processing methods.
+Improved Accuracy: The dynamic noise reduction and event detection algorithms enhance the accuracy of identifying seismic events, particularly low-magnitude ones.
+Enhanced Visualization: The generated plots provide researchers with a clear and comprehensive view of the seismic data, facilitating in-depth analysis and interpretation.
+Web-based Platform: Our user-friendly web platform allows researchers to access and utilize the processing tools from any device with an internet connection, promoting collaboration and wider use.
+By leveraging the power of Python and our innovative SINN class, we are providing researchers with a cutting-edge solution to unlock valuable insights from seismic data collected during space missions. This has the potential to significantly improve our understanding of lunar and planetary geology,  seismic activity, and the formation of celestial bodies.
